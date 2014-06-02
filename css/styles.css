@@ -1,6 +1,46 @@
 /* Your Website Styles */
+.jormungandr img{
+  width: 250px;
+}
+/* Jormungandr twists and turns
+ mighty in his wrath.  */
 
+ figure img{
+  height:500px;
+  max-height: 500px;
+ }
+ .control-button img{
+  height: 95px;
+  max-height: 95px;
+  width: 95px;
+  max-width: 95px;
+ }
+/*  Style Tile Markup  */
 
+h1{
+  font-family: UnifrakturCook, Garamond, sans-serif;
+  color: #222;
+}
+}
+h2{
+  font-family: "Droid Serif", "Baskerville Old Face", Times, serif;
+  color: #077;
+}
+h3{
+  font-family: Cuprum, Futura, sans-serif;
+  color: darkgreen;
+}
+p{
+  font-family: Lora, times, serif;
+  color: #633;
+  }
+a:link, a:visited{
+  text-decoration: none;
+  color: #DA0;
+}
+a:hover, a:focus{
+  color: #0DA;
+}
 
 /* Gallery Stying */
 .gallery .control-button {
@@ -12,7 +52,6 @@
   color: white;
   color: rgba(255, 255, 255, 0.8);
 }
-
 /*
 	Theme controls how everything looks in Gallery CSS.
 */
@@ -20,7 +59,7 @@
   position: relative;
 }
 .gallery .item {
-  height: 400px;
+  height: 500px;
   overflow: hidden;
   text-align: center;
   background: #4d87e2;
@@ -49,4 +88,49 @@
 /* Show Grid */
 .showgrid {
 	background: url("../img/grid-bg.png") repeat-y;
+}
+
+
+/* Transition markup */
+figure{
+  background: teal;
+  overflow: hidden;
+  position: relative;
+}
+figure h3, p{
+  position: absolute;
+  margin: 0;
+  transition: top .4s, bottom .5s .5s, opacity .5s;
+}
+figure h3{
+  top: -50px;
+  text-align: center;
+   display: inline-block;
+  background: rgba( 0,170,170,.7);
+}
+figure p{
+  background: rgba( 0,170,170,.7);
+  bottom:-55px;
+  text-align: left;
+  display: inline-block;
+  opacity: 0;
+}
+figure:hover p{
+  bottom: 0px;
+  opacity: 100;
+}
+figure:hover h3{
+  top: 0px;
+}
+.end p,.end h3{
+    width: 375px;
+}
+.mag p,.mag h3{
+    width: 364px;
+}
+.rand p,.rand h3{
+  width: 700px;
+}
+.intr p,.intr h3{
+  width: 386px;
 }
