@@ -87,6 +87,10 @@ Ben Schwarz*/
   font-size: 3em;
   text-align: center;
   text-decoration: none;
+ -webkit-transition: color .1s;
+-moz-transition: color .1s;
+-ms-transition: color .1s;
+-o-transition: color .1s;
   transition: color .1s;
 }
 
@@ -103,6 +107,10 @@ figure{
 figure h3, p{
   position: absolute;
   margin: 0;
+  -webkit-transition: top .4s, bottom .5s .5s, opacity .5s;
+-moz-transition: top .4s, bottom .5s .5s, opacity .5s;
+-ms-transition: top .4s, bottom .5s .5s, opacity .5s;
+-o-transition: top .4s, bottom .5s .5s, opacity .5s;
   transition: top .4s, bottom .5s .5s, opacity .5s;
 }
 figure h3{
